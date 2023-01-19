@@ -13,6 +13,7 @@ mydir = Path(__file__).parent
 # capture_output does not just print the ls on the console, but collects everything
 # for later use
 # cwd sets the current working directory where the command should run
+# note that this is just an example, there is no need to use ls from python like this
 result = run(["ls", "-lah"], capture_output=True, cwd=mydir)
 # try this line to see stderr
 # result = run(["ls", "-lah", "doesnotexist"], capture_output=True, cwd=mydir)
